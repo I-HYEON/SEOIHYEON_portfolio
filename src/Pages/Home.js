@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import MouseTracker from '../Components/Common/MouseTracker';
 
 const useScroll = () => {
   const [state, setState] = useState({
@@ -19,12 +20,12 @@ const useScroll = () => {
 
 
 const Home = () => {
-  const {y} = useScroll();
 
   return (
     <div style={{height:"1000vh"}}>
-      <h1>메인페이지입니다</h1>
-      <h1 style={{position:"fixed", color:y>100? "red":"blue"}}>useScroll을 테스팅하는 중입니다</h1>
+      <h1>안녕하세요</h1>
+      <h1>서이현입니다.</h1>
+      <MouseTracker/>
     </div>
   );
 };
